@@ -1,19 +1,43 @@
-.BadgesList ul>li {
-  margin-bottom: 1rem;
+.BadgesList {
+  /* margin-bottom: 1rem; */
 }
 
-.BadgesListItem {
-  background: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+.Badge {
+  background: rgba(0, 0, 0, 0.01);
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   display: flex;
+  justify-items: center;
   padding: 1rem;
+  margin-bottom: 16px;
 }
 
-.BadgesListItem__avatar {
+.Badge__avatar {
   border-radius: 50%;
-  background: #a3a3a3;
-  margin-right: 0.5rem;
+  display: block;
   width: 80px;
   height: 80px;
+  margin-right: 1rem;
+}
+
+.Badge__info {
+}
+
+.Badge__name,
+.Badge__twitter {
+  margin: 0 0 .5em;
+}
+
+.Badge__twitter {
+  color: #1A91DA;
+  font-size: .9em;
+}
+
+.Badge__twitter::before {
+  content: '@';
+}
+
+.Badge__jobTitle {
+  margin: 0;
+  font-size: .8em;
 }

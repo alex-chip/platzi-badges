@@ -1,9 +1,9 @@
 import React from 'react';
+import BadgesList from '../../components/BadgesList';
+import Navbar from '../../components/Navbar';
+import confLogo from '../../images/badge-header.svg';
+import './Badges.css';
 
-import './styles/Badges.css';
-import confLogo from '../images/badge-header.svg';
-import Navbar from '../components/Navbar';
-import BadgesList from '../components/BadgesList';
 
 class Badges extends React.Component {
   state = {
