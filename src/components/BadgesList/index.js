@@ -1,4 +1,5 @@
 import React from 'react';
+import logoTwitter from '../../images/logo-twitter.svg';
 import './BadgesList.css';
 
 
@@ -16,7 +17,10 @@ class BadgesListItem extends React.Component {
           <h3 className='Badge__name'>
             {this.props.badge.firstName} {this.props.badge.lastName}
           </h3>
-          <p className='Badge__twitter'>{this.props.badge.twitter}</p>
+          <div className="Twitter">
+            <img src={logoTwitter} className="Badge__twitter-logo" />
+            <p className='Badge__twitter'>{this.props.badge.twitter}</p>
+          </div>
           <p className='Badge__jobTitle'>{this.props.badge.jobTitle}</p>
         </div>
       </section>
